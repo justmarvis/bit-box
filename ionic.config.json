@@ -1,0 +1,7 @@
+{
+  "name": "Bit-Box",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
