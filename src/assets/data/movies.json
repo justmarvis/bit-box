@@ -1,0 +1,32 @@
+
+
+{
+  "movies": [
+    {
+      "id": 1,
+      "url": "https://www.youtube.com/embed/aWzlQ2N6qqg",
+      "name": "Doctor Strange in the Multiverse of Madness",
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "description": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+      "released": "05/06/2022",
+      "origin": "United States",
+      "language": "English",
+      "genre": "Fantasy, Action, Adventure",
+      "quality": "HD/4k",
+      "length": "2h 6m"
+    },
+    {
+      "id": 2,
+      "url": "https://www.youtube.com/embed/6DxjJzmYsXo",
+      "name": "Minions: The Rise of Gru",
+      "title": "Minions: The Rise of Gru",
+      "description": "A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+      "released": "07/01/2022",
+      "origin": "United States",
+      "language": "English",
+      "genre": "Family, Animation, Adventure, Comedy, Fantasy",
+      "quality": "HD/4k",
+      "length": "1h 27m"
+    }
+  ]
+}
