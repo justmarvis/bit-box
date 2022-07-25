@@ -41,11 +41,11 @@
 
   <!-- categories of entertainment available -->
   <div class="category">
-    <div class="cat">MOVIES</div>
-    <div class="cat">TV SHOWS</div>
-    <div class="cat">ANIMATIONS</div>
-    <div class="cat">ANIME</div>
-    <div class="cat">DOCUMENTARY</div>
+    <div class="cat movie">MOVIES</div>
+    <div class="cat show">TV SHOWS</div>
+    <div class="cat animation">ANIMATIONS</div>
+    <div class="cat anime">ANIME</div>
+    <div class="cat documentary">DOCUMENTARY</div>
   </div>
 
   <!-- entertainment recommendations -->
@@ -76,18 +76,9 @@
   <!-- entertainment recommendations -->
   <h4>Top Movies</h4>
   <div class="scroll-box">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" *ngFor="let movie of movies">
+      <p>{{movie.title}}</p>
+    </div>
   </div>
 
   <!-- entertainment recommendations -->
