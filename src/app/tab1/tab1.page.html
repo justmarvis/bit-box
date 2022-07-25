@@ -13,8 +13,8 @@
 
   <!-- continue to watch you in-progress -->
   <h4>Continue Watching</h4>
-  <div class="scroll-box">
-    <!-- <h4>{{user.name}}</h4> -->
+  <div class="scroll-box" *ngFor="let movie of movies">
+    <h4>{{movie.name}}</h4>
     <div class="box"></div>
     <div class="box"></div>
     <!-- <div class="box"></div>

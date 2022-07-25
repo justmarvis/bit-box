@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ThemoviedbService } from '../projects/api/service/themoviedb.service';
 
@@ -8,21 +9,18 @@ import { ThemoviedbService } from '../projects/api/service/themoviedb.service';
 })
 export class Tab1Page implements OnInit {
 
-  modelType: 'movie';
-  users: any;
+  movies: any;
+  shows: any;
+  animes: any;
+  animations: any;
+  documentarys: any;
 
-  constructor(private service: ThemoviedbService) {}
+  constructor(private service: ThemoviedbService, private http: HttpClient) {}
 
   ngOnInit(): void {
-    // this.service.getMovieList(this.modelType).subscribe(tredingMoviesEl => {
-    //   console.log(tredingMoviesEl);
-    // });
-    this.service.getMovieList(this.modelType).subscribe(tredingMoviesEl => this.users = tredingMoviesEl);
+    const movies =this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/movies.json');
+    movies.subscribe(
+      (data) => console.log(data)
+    );
   }
-
-  // initializeSliderContainer() {
-  //       this.service.getMovieList(this.modelType).subscribe(tredingMoviesEl => {
-  //         console.log(tredingMoviesEl);
-  //       });
-  //     }
 }
