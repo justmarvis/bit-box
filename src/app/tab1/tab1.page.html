@@ -12,22 +12,32 @@
 <ion-content [fullscreen]="true">
 
   <!-- continue to watch you in-progress -->
-  <h4>Continue Watching</h4>
-  <div class="scroll-box" *ngFor="let movie of movies">
-    <h4>{{movie.name}}</h4>
-    <div class="box"></div>
-    <div class="box"></div>
-    <!-- <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div> -->
-  </div>
+  <!-- <h4>Continue Watching</h4>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Origin</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Released Date</th>
+      <th>Genre Category</th>
+      <th>Movie Quality</th>
+      <th>Duration</th>
+    </tr>
+    <tr *ngFor="let movie of movies">
+      <td>{{movie.id}}</td>
+      <td>{{movie.origin}}</td>
+      <td>{{movie.title}}</td>
+      <td>{{movie.description}}</td>
+      <td>{{movie.released}}</td>
+      <td>{{movie.genre}}</td>
+      <td>{{movie.quality}}</td>
+      <td>{{movie.length}}</td>
+    </tr>
+  </table> -->
+  <!-- <div class="scroll-box" *ngFor="let movie of movies">
+    <div class="box">{{movie.title}}</div>
+  </div> -->
 
   <!-- categories of entertainment available -->
   <div class="category">
@@ -41,18 +51,9 @@
   <!-- entertainment recommendations -->
   <h4>New to Bit-Box</h4>
   <div class="scroll-box">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" *ngFor="let movie of movies">
+      <p>{{movie.title}}</p>
+    </div>
   </div>
 
   <!-- entertainment recommendations -->
