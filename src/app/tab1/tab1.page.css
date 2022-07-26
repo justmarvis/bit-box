@@ -22,7 +22,9 @@
 .cat {
   min-width: 250px;
   height: 150px;
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
+  background: transparent;
+  /* border: 2px solid #ff0000; */
   border-radius: 15px;
   margin-right: 20px;
   display: flex;
@@ -57,9 +59,20 @@
   transform: scale(1.1);
   background: transparent;
 }
+.cat:active {
+  border: 2px solid #ff0000;
+  transform: none;
+  background: transparent;
+}
 h4 {
   margin-left: 35px;
   margin-bottom: -15px;
+}
+.site-name {
+  color: #ff0000;
+}
+.logo {
+  color: #ff0000;
 }
 p {
   margin: none;

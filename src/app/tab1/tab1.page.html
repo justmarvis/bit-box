@@ -1,9 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="head">
     <div class="logo ion-margin-start" slot="start">
-      <ion-icon name="play" style="font-size: 30px;"></ion-icon>
+      <ion-icon name="play" style="font-size: 30px;" class="logo"></ion-icon>
     </div>
-    <ion-title>
+    <ion-title class="site-name">
       Bit-Box
     </ion-title>
   </ion-toolbar>
@@ -101,18 +101,9 @@
   <!-- entertainment recommendations -->
   <h4>Top Animations</h4>
   <div class="scroll-box">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" *ngFor="let animation of animations">
+      <p>{{animation.title}}</p>
+    </div>
   </div>
 
   <!-- entertainment recommendations -->

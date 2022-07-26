@@ -29,5 +29,11 @@ export class Tab1Page implements OnInit {
       (data) => this.movies = data
     );
 
+    //request api data for animations
+    const animations = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/animation.json');
+    animations.subscribe(
+      (data) => this.animations = data
+    );
+
   }
 }
