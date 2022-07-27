@@ -26,7 +26,7 @@ export class Tab1Page implements OnInit {
     // );
 
     //request api data for news
-    const news = this.http.get('');
+    const news = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/new.json');
     news.subscribe(
     (data) => this.news = data
     );
@@ -38,19 +38,19 @@ export class Tab1Page implements OnInit {
     );
 
     //request api data for shows
-    const shows = this.http.get('');
+    const shows = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/shows.json');
     shows.subscribe(
     (data) => this.shows = data
     );
 
     //request api data for forYous
-    const forYous = this.http.get('');
+    const forYous = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/fy.json');
     forYous.subscribe(
     (data) => this.forYous = data
     );
 
     //request api data for animes
-    const animes = this.http.get('');
+    const animes = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/anime.json');
     animes.subscribe(
     (data) => this.animes = data
     );
