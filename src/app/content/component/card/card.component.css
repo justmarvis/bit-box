@@ -32,3 +32,20 @@
   align-items: center;
   font-size: 12px;
 }
+.rating {
+  margin-left: 2px;
+}
+.length {
+  margin-left: 2px;
+}
+.byline {
+  font-size: 12px;
+}
+.boom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lan {
+  font-size: 12px;
+}

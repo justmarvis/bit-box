@@ -5,6 +5,7 @@
       <hr class="divider">
       <div class="card-tile">
         <p class="title">{{movie.title}}</p>
+        <p class="byline">{{movie.language}} • {{movie.name}}</p>
         <div class="uno">
           <p class="quality">{{movie.quality}}</p>
           <p class="rating">{{movie.rating}}</p>
@@ -12,7 +13,12 @@
         </div>
         <p class="description">{{movie.description}}</p>
         <div class="boom">
-          <p class="genre">{{movie.genre}}</p>
+          <div class="left">
+            <p class="genre">{{movie.genre}}</p>
+          </div>
+          <div class="right">
+            <p class="lan">{{movie.origin}}</p>
+          </div>
         </div>
       </div>
     </div>

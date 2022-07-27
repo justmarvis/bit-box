@@ -40,8 +40,8 @@
   <!-- entertainment recommendations -->
   <h4>Top Movies</h4>
   <div class="scroll-box">
-    <div class="box" *ngFor="let movie of movies">
-     <img src={{movie.image}} alt="" class="movieimg" />
+    <div class="box" *ngFor="let movie of movies" routerLink="/movie-details">
+     <img src={{movie.image}} alt="" class="movieimg"  routerLink="/movie-details" />
       <!-- <p>{{movie.title}}</p> -->
     </div>
   </div>
