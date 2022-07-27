@@ -13,7 +13,7 @@
       "language": "English",
       "genre": "Fantasy • Action • Adventure",
       "quality": "HD",
-      "Rating": "PG-13",
+      "rating": "PG-13",
       "length": "2h 6m"
     },
     {
@@ -28,7 +28,7 @@
       "language": "English",
       "genre": "Action • Drama",
       "quality": "HD",
-      "Rating": "PG-13",
+      "rating": "PG-13",
       "length": "2h 11m"
     },
     {
@@ -43,7 +43,7 @@
       "language": "English",
       "genre": "Action • Adventure • Fantasy",
       "quality": "HD",
-      "Rating": "PG-13",
+      "rating": "PG-13",
       "length": "1h 59m"
     },
     {
@@ -58,7 +58,7 @@
       "language": "English",
       "genre": "Fantasy • Action",
       "quality": "HD",
-      "Rating": "R",
+      "rating": "R",
       "length": "1h 34m"
     },
     {
@@ -73,7 +73,7 @@
       "language": "English",
       "genre": "Action • Thriller",
       "quality": "HD",
-      "Rating": "R",
+      "rating": "R",
       "length": "1h 35m"
     },
     {
@@ -88,7 +88,7 @@
       "language": "English",
       "genre": "Action • Adventure • Family • Comedy",
       "quality": "HD",
-      "Rating": "PG",
+      "rating": "PG",
       "length": "2h 2m"
     },
     {
@@ -103,7 +103,7 @@
       "language": "English",
       "genre": "Action • Adventure • Science • Fiction",
       "quality": "HD",
-      "Rating": "PG-13",
+      "rating": "PG-13",
       "length": "2h 28m"
     },
     {
@@ -118,7 +118,7 @@
       "language": "English",
       "genre": "Thriller",
       "quality": "HD",
-      "Rating": "R",
+      "rating": "R",
       "length": "1h 26m"
     },
     {
@@ -133,7 +133,7 @@
       "language": "English",
       "genre": "Action • Crime • Thriller",
       "quality": "HD",
-      "Rating": "R",
+      "rating": "R",
       "length": "1h 36m"
     },
     {
@@ -148,7 +148,7 @@
       "language": "English",
       "genre": "Action • Comedy • Thriller",
       "quality": "HD",
-      "Rating": "PG-13",
+      "rating": "PG-13",
       "length": "1h 50m"
     }
   ]

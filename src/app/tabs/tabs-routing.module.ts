@@ -20,7 +20,10 @@ const routes: Routes = [
         path: 'tab3',
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
-      { path: 'movie-details', component: CardComponent },
+      // {
+      //   path: 'card',
+      //   loadChildren: () => import('../card/card.module').then(m => m.CardPageModule)
+      // },
       {
         path: '',
         redirectTo: '/tabs/tab1',
