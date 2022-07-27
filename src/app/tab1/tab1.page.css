@@ -51,15 +51,15 @@
   justify-content: center;
   align-items: center;
 }
-.movieimg {
+.movieimg, .newimg, .showimg, .animationimg, .animeimg {
   min-width: 150px;
   height: 200px;
   border-radius: 10px;
 }
-.movieimg:hover {
+.movieimg:hover, .newimg:hover, .showimg:hover, .animationimg:hover, .animimg:hover {
   transform: scale(1.1);
 }
-.movieimg:active {
+.movieimg:active, .newimg:active, .showimg:active, .animationimg:active, .animeimg:active {
   opacity: 80%;
 }
 .cat:hover {
