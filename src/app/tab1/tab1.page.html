@@ -60,24 +60,17 @@
   <!-- entertainment recommendations -->
   <h4>For You</h4>
   <div class="scroll-box">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box">
+        <img src="" alt="" class="" />
+        <!-- <p>{{movie.title}}</p> -->
+      </div>
   </div>
 
   <!-- entertainment recommendations -->
   <h4>Top Movies</h4>
   <div class="scroll-box">
     <div class="box" *ngFor="let movie of movies">
+    <img src={{movie.image}} alt="" class="movieimg" />
       <!-- <p>{{movie.title}}</p> -->
     </div>
   </div>
