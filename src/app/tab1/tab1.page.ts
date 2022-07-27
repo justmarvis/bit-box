@@ -20,6 +20,8 @@ export class Tab1Page implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
+
+    //test request api for movies
     // const movies =this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/movies.json');
     // movies.subscribe(
     //   (data) => console.log(data)
@@ -56,7 +58,7 @@ export class Tab1Page implements OnInit {
     );
 
     //request api data for documentarys
-    const documentarys = this.http.get('');
+    const documentarys = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/documentary.json');
     documentarys.subscribe(
     (data) => this.documentarys = data
     );
