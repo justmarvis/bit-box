@@ -11,33 +11,13 @@
 
 <ion-content [fullscreen]="true">
 
-  <!-- continue to watch you in-progress -->
-  <!-- <h4>Continue Watching</h4>
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Origin</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Released Date</th>
-      <th>Genre Category</th>
-      <th>Movie Quality</th>
-      <th>Duration</th>
-    </tr>
-    <tr *ngFor="let movie of movies">
-      <td>{{movie.id}}</td>
-      <td>{{movie.origin}}</td>
-      <td>{{movie.title}}</td>
-      <td>{{movie.description}}</td>
-      <td>{{movie.released}}</td>
-      <td>{{movie.genre}}</td>
-      <td>{{movie.quality}}</td>
-      <td>{{movie.length}}</td>
-    </tr>
-  </table> -->
-  <!-- <div class="scroll-box" *ngFor="let movie of movies">
-    <div class="box">{{movie.title}}</div>
-  </div> -->
+  <div class="board">
+    <p class="note">
+      Browse through <br>
+      <span class="em"><u>one</u> thousand</span> <br>
+      movies, tv shows, animations, anime and documentary.
+    </p>
+  </div>
 
   <!-- categories of entertainment available -->
   <div class="category">
@@ -51,26 +31,26 @@
   <!-- entertainment recommendations -->
   <h4>New to Bit-Box</h4>
   <div class="scroll-box">
-    <div class="box" *ngFor="let movie of movies">
-    <img src={{movie.image}} alt="" class="movieimg" />
+    <div class="box" *ngFor="let new of news">
+    <img src={{new.image}} alt="" class="newimg" />
       <!-- <p>{{movie.title}}</p> -->
     </div>
   </div>
 
   <!-- entertainment recommendations -->
-  <h4>For You</h4>
+  <!-- <h4>For You</h4>
   <div class="scroll-box">
     <div class="box">
         <img src="" alt="" class="" />
-        <!-- <p>{{movie.title}}</p> -->
+        <p>{{movie.title}}</p>
       </div>
-  </div>
+  </div> -->
 
   <!-- entertainment recommendations -->
   <h4>Top Movies</h4>
   <div class="scroll-box">
     <div class="box" *ngFor="let movie of movies">
-    <img src={{movie.image}} alt="" class="movieimg" />
+     <img src={{movie.image}} alt="" class="movieimg" />
       <!-- <p>{{movie.title}}</p> -->
     </div>
   </div>
@@ -78,18 +58,10 @@
   <!-- entertainment recommendations -->
   <h4>Top Shows</h4>
   <div class="scroll-box">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" *ngFor="let show of shows">
+      <img src={{shows.image}} alt="" class="showimg" />
+       <!-- <p>{{movie.title}}</p> -->
+     </div>
   </div>
 
   <!-- entertainment recommendations -->
@@ -104,17 +76,9 @@
   <!-- entertainment recommendations -->
   <h4>Top Animes</h4>
   <div class="scroll-box">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" *ngFor="let anime of animes">
+      <img src={{anime.image}} alt="" class="animeimg" />
+       <!-- <p>{{movie.title}}</p> -->
+     </div>
   </div>
 </ion-content>

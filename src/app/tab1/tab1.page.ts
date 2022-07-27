@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab1Page implements OnInit {
 
+  news: any;
+  forYous: any;
   movies: any;
   shows: any;
   animes: any;
@@ -23,10 +25,40 @@ export class Tab1Page implements OnInit {
     //   (data) => console.log(data)
     // );
 
+    //request api data for news
+    const news = this.http.get('');
+    news.subscribe(
+    (data) => this.news = data
+    );
+
     //request api data for movies
-    const movies =this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/movies.json');
+    const movies = this.http.get('https://raw.githubusercontent.com/justmarvis/bit-box/master/src/assets/data/movies.json');
     movies.subscribe(
       (data) => this.movies = data
+    );
+
+    //request api data for shows
+    const shows = this.http.get('');
+    shows.subscribe(
+    (data) => this.shows = data
+    );
+
+    //request api data for forYous
+    const forYous = this.http.get('');
+    forYous.subscribe(
+    (data) => this.forYous = data
+    );
+
+    //request api data for animes
+    const animes = this.http.get('');
+    animes.subscribe(
+    (data) => this.animes = data
+    );
+
+    //request api data for documentarys
+    const documentarys = this.http.get('');
+    documentarys.subscribe(
+    (data) => this.documentarys = data
     );
 
     //request api data for animations
