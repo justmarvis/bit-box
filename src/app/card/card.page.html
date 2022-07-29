@@ -1,24 +1,39 @@
-<div class="container">
-  <div class="card-mat" *ngFor="let movie of movies">
-    <iframe width="560" height="315" src={{movie.url}} title="Trailer player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
-    <hr class="divider">
-    <div class="card-tile">
-      <p class="title">{{movie.title}}</p>
-      <p class="byline">{{movie.language}} • {{movie.name}}</p>
-      <div class="uno">
-        <p class="quality">{{movie.quality}}</p>
-        <p class="rating">{{movie.rating}}</p>
-        <p class="length">{{movie.length}}</p>
-      </div>
-      <p class="description">{{movie.description}}</p>
-      <div class="boom">
-        <div class="left">
-          <p class="genre">{{movie.genre}}</p>
+<ion-header [translucent]="true">
+  <ion-toolbar class="head">
+    <div class="logo ion-margin-start" slot="start">
+      <ion-icon name="play" style="font-size: 30px;" class="logo"></ion-icon>
+    </div>
+    <ion-title class="site-name">
+      Bit-Box
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="container" style="overflow: scroll;">
+    <div class="card-mat" *ngFor="let movie of movies">
+      <iframe width="560" height="315" src={{movie.url}} title="Trailer player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+      <hr class="divider">
+      <div class="card-tile">
+        <p class="title">{{movie.title}}</p>
+        <p class="byline">{{movie.language}} • {{movie.name}}</p>
+        <div class="uno">
+          <p class="quality">{{movie.quality}}</p>
+          <p class="rating">{{movie.rating}}</p>
+          <p class="length">{{movie.length}}</p>
         </div>
-        <div class="right">
-          <p class="lan">{{movie.origin}}</p>
+        <p class="description">{{movie.description}}</p>
+        <div class="boom">
+          <div class="left">
+            <p class="genre">{{movie.genre}}</p>
+          </div>
+          <div class="right">
+            <p class="lan">{{movie.origin}}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+</ion-content>

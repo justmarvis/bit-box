@@ -16,6 +16,7 @@ export class Tab1Page implements OnInit {
   animes: any;
   animations: any;
   documentarys: any;
+  slider: any;
 
   constructor(private http: HttpClient) {}
 
@@ -69,5 +70,10 @@ export class Tab1Page implements OnInit {
       (data) => this.animations = data
     );
 
+    //request api data for slider
+    const slider =this.http.get('https://www.newcanaanymca.org/wp-content/uploads/2021/11/Moana-Movie-Poster-landscape.jpg');
+    slider.subscribe(
+      (data) => this.slider = data
+    );
   }
 }

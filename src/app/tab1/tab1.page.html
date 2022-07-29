@@ -19,14 +19,22 @@
     </p>
   </div>
 
+  <!-- slider of recent and popular entertainment / advertisement board -->
+  <div class="slider">
+    <div class="slide" *ngFor="let slider of slider">
+      <img src={{slider.content}} alt="">
+    </div>
+  </div>
+
   <!-- categories of entertainment available -->
   <div class="category">
     <div class="cat movie">MOVIES</div>
     <div class="cat show">TV SHOWS</div>
     <div class="cat animation">ANIMATIONS</div>
-    <div class="cat anime">ANIME</div>
+    <div class="cat anime" routerLink="/anime">ANIME</div>
     <div class="cat documentary">DOCUMENTARY</div>
   </div>
+
 
   <!-- entertainment recommendations -->
   <h4>New to Bit-Box</h4>
@@ -40,8 +48,8 @@
   <!-- entertainment recommendations -->
   <h4>Top Movies</h4>
   <div class="scroll-box">
-    <div class="box" *ngFor="let movie of movies" routerLink="/movie-details">
-     <img src={{movie.image}} alt="" class="movieimg"  routerLink="/card" />
+    <div class="box" *ngFor="let movie of movies">
+     <img src={{movie.image}} alt="" routerLink="/card" class="movieimg" />
       <!-- <p>{{movie.title}}</p> -->
     </div>
   </div>
